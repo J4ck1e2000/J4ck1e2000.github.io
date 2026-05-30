@@ -44,6 +44,11 @@
     -webkit-font-smoothing: antialiased;
     letter-spacing: 0.01em;
   }
+  /* 背景铺满：html、内容容器、侧边栏都统一成米白 */
+  html { background-color: var(--ant-bg) !important; }
+  .initial-content, .page, .page__inner-wrap, #main,
+  .author__avatar, .sidebar, .author__urls-wrapper { background-color: transparent !important; }
+  .sidebar .author__urls, .author__urls.social-icons { background-color: transparent !important; box-shadow: none !important; border-color: var(--ant-line) !important; }
   #main, .page__content, .archive { color: var(--ant-ink) !important; }
   h1, h2, h3, h4, .page__title, .archive__item-title {
     font-family: var(--ant-serif) !important;
