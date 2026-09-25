@@ -1,0 +1,35 @@
+- id: "2609.24109"
+  title: "Adaptive Cortically Constrained EEG-Vision Alignment for Zero-Shot Brain-to-Image Retrieval"
+  date: "2026.09"
+  authors:
+    - name: "Ye Wang"
+    - name: "Haokun Ren"
+      owner: true
+    - name: "Wei Wu"
+    - name: "Guoyin Wang"
+    - name: "Zhuliang Yu"
+    - name: "Hong Yu"
+    - name: "Ke Liu"
+  summary:
+    zh: "将 EEG 映射为预定义 ROI 级源模式表示，并根据样本级对齐证据自适应加权视觉监督，用于零样本脑到图像检索。"
+    en: "Maps EEG responses to predefined ROI-level source-pattern representations and adaptively weights visual supervision using sample-level alignment evidence for zero-shot brain-to-image retrieval."
+  arxiv_url: "https://arxiv.org/abs/2609.24109"
+  pdf_url: "https://arxiv.org/pdf/2609.24109"
+
+- id: "2609.24136"
+  title: "The Visual Target Matters: Learning across the Visual Hierarchy for Brain-to-Image Retrieval"
+  date: "2026.09"
+  authors:
+    - name: "Ye Wang"
+    - name: "Haokun Ren"
+      owner: true
+    - name: "Hong Yu"
+    - name: "Ruirui Li"
+    - name: "Xiao Li"
+    - name: "Ke Liu"
+    - name: "Wei Wu"
+  summary:
+    zh: "NeuroGlyph 从冻结视觉骨干网络的多个深度学习与试次无关的视觉目标，并通过因子化子空间和图像条件的深度分配融合多层信息。"
+    en: "NeuroGlyph learns a trial-independent visual target from multiple depths of a frozen vision backbone, combining factor-specific subspaces with image-conditioned depth allocation."
+  arxiv_url: "https://arxiv.org/abs/2609.24136"
+  pdf_url: "https://arxiv.org/pdf/2609.24136"

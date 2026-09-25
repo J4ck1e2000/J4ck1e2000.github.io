@@ -1,0 +1,18 @@
+{% assign paper = include.publication %}
+<article class="publication">
+  <div class="publication__meta">
+    <time>{{ paper.date }}</time>
+    <span>arXiv:{{ paper.id }}</span>
+  </div>
+  <h3 class="publication__title"><a href="{{ paper.arxiv_url }}">{{ paper.title | escape }}</a></h3>
+  <ul class="publication__authors" aria-label="{% if page.locale == 'zh' %}作者{% else %}Authors{% endif %}">
+    {% for author in paper.authors %}
+      <li{% if author.owner %} class="publication__author--owner"{% endif %}>{{ author.name | escape }}</li>
+    {% endfor %}
+  </ul>
+  <p class="publication__summary">{{ paper.summary[page.locale] | escape }}</p>
+  <div class="publication__links">
+    <a href="{{ paper.arxiv_url }}">arXiv <span aria-hidden="true">↗</span></a>
+    <a href="{{ paper.pdf_url }}">PDF <span aria-hidden="true">↗</span></a>
+  </div>
+</article>

@@ -1,0 +1,28 @@
+{% assign home_url = '/' %}
+{% assign language_label = 'EN' %}
+{% assign language_code = 'en' %}
+{% assign language_aria_label = 'Switch to English' %}
+{% if page.locale == 'en' %}
+  {% assign home_url = '/en/' %}
+  {% assign language_label = '中' %}
+  {% assign language_code = 'zh-CN' %}
+  {% assign language_aria_label = '切换到中文' %}
+{% endif %}
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-brand" href="{{ home_url | relative_url }}">
+      <span class="site-brand__mark" aria-hidden="true">H.</span>
+      <span>Haokun Ren</span>
+    </a>
+    <nav class="site-nav" aria-label="{% if page.locale == 'zh' %}主导航{% else %}Main navigation{% endif %}">
+      <ul>
+        {% for item in site.data.navigation[page.locale] %}
+          <li><a href="#{{ item.anchor }}">{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <a class="language-switch" href="{{ page.alternate_url | relative_url }}" lang="{{ language_code }}" aria-label="{{ language_aria_label }}">
+      {{ language_label }} <span aria-hidden="true">↗</span>
+    </a>
+  </div>
+</header>

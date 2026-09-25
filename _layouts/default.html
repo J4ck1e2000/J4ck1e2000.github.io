@@ -3,31 +3,19 @@ layout: compress
 ---
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="{{ page.lang }}">
   <head>
     {% include head.html %}
-    {% include head/custom.html %}
   </head>
-
   <body>
-
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
-
-    <div id="main" role="main">
-      {% include sidebar.html %}
-    
-      <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-        <div class="page__inner-wrap">
-          <section class="page__content" itemprop="text">
-            {{ content }}
-          </section>
-        </div>
-      </article>
-    </div>
-
-    {% include scripts.html %}
-
+    <a class="skip-link" href="#main">
+      {% if page.locale == "zh" %}跳转到正文{% else %}Skip to content{% endif %}
+    </a>
+    {% include site-header.html %}
+    <main id="main" class="site-main">
+      {% include site-hero.html %}
+      {{ content }}
+    </main>
+    {% include site-footer.html %}
   </body>
 </html>

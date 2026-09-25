@@ -6,8 +6,9 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "你的名字"
-description              : "一句话介绍你自己，比如：某某大学博士生，研究方向是……"
+title                    : "Haokun Ren"
+description              : "Research on EEG/MEG neural representations and brain-to-image retrieval."
+url                      : "https://j4ck1e2000.github.io"
 repository               : "J4ck1e2000/J4ck1e2000.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -21,9 +22,9 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "你的名字"
+  name             : "Haokun Ren"
   avatar           : "images/myself.jpg"   # 把你的头像放到 images/ 文件夹，文件名改成 myself.jpg
-  bio              : "你的学校 / 公司"
+  bio              : "EEG/MEG, neural-visual alignment, and brain-to-image retrieval"
   location         : "你所在的城市, China"
   employer         :
   pubmed           :
@@ -66,6 +67,7 @@ include:
   - files
 exclude:
   - docs
+  - AGENTS.md
   - google_scholar_crawler
   - "*.sublime-project"
   - "*.sublime-workspace"
