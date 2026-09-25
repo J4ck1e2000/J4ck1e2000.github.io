@@ -18,19 +18,10 @@ redirect_from:
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">会议/期刊 年份</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[论文标题写在这里](论文链接)
-
-**你的名字**, 合作者A, 合作者B
-
-[**Project**](项目链接)
-- 用一两句话介绍这篇论文的核心贡献。
-</div>
-</div>
-
-- [另一篇论文（简单列表样式）](论文链接), 作者列表, **会议名 年份**
+- *2026.09*, **[Adaptive Cortically Constrained EEG-Vision Alignment for Zero-Shot Brain-to-Image Retrieval](https://arxiv.org/abs/2609.24109)**. **Ye Wang**, Haokun Ren, Wei Wu, Guoyin Wang, Zhuliang Yu, Hong Yu, Ke Liu. [arXiv:2609.24109](https://arxiv.org/abs/2609.24109) · [PDF](https://arxiv.org/pdf/2609.24109)
+  - 提出皮层约束的 EEG-视觉对齐方法，将 EEG 重建为 ROI 级源模式表示，并依据样本级对齐证据自适应调整视觉监督，用于零样本脑到图像检索。
+- *2026.09*, **[The Visual Target Matters: Learning across the Visual Hierarchy for Brain-to-Image Retrieval](https://arxiv.org/abs/2609.24136)**. **Ye Wang**, HaoKun Ren, Hong Yu, Ruirui Li, Xiao Li, Ke Liu, Wei Wu. [arXiv:2609.24136](https://arxiv.org/abs/2609.24136) · [PDF](https://arxiv.org/pdf/2609.24136)
+  - 提出 NeuroGlyph，从冻结视觉骨干网络的多个层级学习检索目标，并通过因子化子空间与图像条件的层级分配融合多层视觉信息。
 
 # 🎖 Honors and Awards
 - *2025.10* 在这里写一项荣誉或奖项。
@@ -45,4 +36,3 @@ redirect_from:
 
 # 🍑 Personal
 - 这里可以写一些个人爱好、兴趣，让主页更有人情味。比如：喜欢摄影、打篮球、地理知识竞猜等。
-
