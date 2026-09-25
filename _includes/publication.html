@@ -5,7 +5,7 @@
     <span>arXiv:{{ paper.id }}</span>
   </div>
   <h3 class="publication__title"><a href="{{ paper.arxiv_url }}">{{ paper.title | escape }}</a></h3>
-  <ul class="publication__authors" aria-label="Authors">
+  <ul class="publication__authors" aria-label="{% if page.locale == 'zh' %}作者{% else %}Authors{% endif %}">
     {% for author in paper.authors %}
       <li{% if author.owner %} class="publication__author--owner"{% endif %}>{{ author.name | escape }}</li>
     {% endfor %}

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" fill="none">
+  <path d="M24 150h38l17-32 20 64 22-105 25 146 22-83 19 25h49" stroke="#6AA6D2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="239" cy="165" r="5" fill="#202020"/>
+  <path d="M239 165c38 0 26-70 68-70" stroke="#6AA6D2" stroke-width="2" stroke-dasharray="4 8"/>
+  <path d="M239 165c38 0 26 70 68 70" stroke="#6AA6D2" stroke-width="2" stroke-dasharray="4 8"/>
+  <g stroke="#202020" stroke-opacity=".25" stroke-width="1.5">
+    <rect x="321" y="55" width="50" height="50" rx="3" fill="#EC8E7D" fill-opacity=".92"/>
+    <rect x="383" y="55" width="50" height="50" rx="3" fill="#6AA6D2" fill-opacity=".86"/>
+    <rect x="445" y="55" width="50" height="50" rx="3" fill="#F4F4F2"/>
+    <rect x="321" y="117" width="50" height="50" rx="3" fill="#F4F4F2"/>
+    <rect x="383" y="117" width="50" height="50" rx="3" fill="#EBC84D" fill-opacity=".95"/>
+    <rect x="445" y="117" width="50" height="50" rx="3" fill="#6AA6D2" fill-opacity=".38"/>
+    <rect x="321" y="179" width="50" height="50" rx="3" fill="#6AA6D2" fill-opacity=".55"/>
+    <rect x="383" y="179" width="50" height="50" rx="3" fill="#F4F4F2"/>
+    <rect x="445" y="179" width="50" height="50" rx="3" fill="#EC8E7D" fill-opacity=".58"/>
+  </g>
+  <path d="M24 263h471" stroke="#202020" stroke-opacity=".18" stroke-width="1"/>
+  <path d="M24 37h471" stroke="#202020" stroke-opacity=".18" stroke-width="1"/>
+</svg>
