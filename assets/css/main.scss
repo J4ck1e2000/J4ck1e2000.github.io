@@ -119,6 +119,15 @@ h1:before, .anchor:before {
     min-width: 0;
 }
 
+.greedy-nav {
+    min-width: 0;
+}
+
+.greedy-nav button:focus-visible {
+    outline: 3px solid $info-color;
+    outline-offset: -3px;
+}
+
 .masthead__menu-home-item {
     display: block !important;
 }
