@@ -22,42 +22,10 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Haokun Ren"
-  avatar           : "images/myself.jpg"   # 把你的头像放到 images/ 文件夹，文件名改成 myself.jpg
-  bio              : "EEG/MEG, neural-visual alignment, and brain-to-image retrieval"
-  location         : "你所在的城市, China"
-  employer         :
-  pubmed           :
-  googlescholar    :   # 没有谷歌学术就留空
-  email            : "你的邮箱@example.com"
-  researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
-  uri              :
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         :
-  foursquare       :
-  github           : # e.g., "github username"
-  google_plus      :
-  keybase          :
-  instagram        :
-  impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
-  lastfm           :
-  linkedin         : # e.g., "linkedin username"
-  dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
-  orcid            : # e.g., "https://orcid.org/xxxx"
-  pinterest        :
-  soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
-  steam            :
-  tumblr           :
-  twitter          : 
-  vine             :
-  weibo            :
-  xing             :
-  youtube          :
-  wikipedia        :
+  name: "Haokun Ren"
+  bio:
+    zh: "我关注 EEG/MEG 神经信号如何与视觉表征对齐，以及这种对齐如何支持脑到图像检索。"
+    en: "I study how EEG/MEG signals align with visual representations, and how this alignment can support brain-to-image retrieval."
 
 
 # Reading Files

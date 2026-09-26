@@ -12,9 +12,13 @@ layout: compress
       {% if page.locale == "zh" %}跳转到正文{% else %}Skip to content{% endif %}
     </a>
     {% include site-header.html %}
-    <main id="main" class="site-main">
-      {% include site-hero.html %}
-      {{ content }}
+    <main id="main" class="academic-layout">
+      <aside class="profile-column">
+        {% include site-profile.html %}
+      </aside>
+      <article class="content-column">
+        {{ content }}
+      </article>
     </main>
     {% include site-footer.html %}
   </body>
