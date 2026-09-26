@@ -107,3 +107,52 @@ h1:before, .anchor:before {
     background-color: #00369f;
     font-size: .8em;
 }
+
+.masthead__inner-wrap {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.masthead__menu {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.masthead__menu-home-item {
+    display: block !important;
+}
+
+.masthead__lang-switch {
+    flex: none;
+    display: block;
+    margin: .4em .5em;
+    padding: .4em .65em;
+    border: 1px solid $border-color;
+    color: $masthead-link-color;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.masthead__lang-switch:focus-visible {
+    outline: 3px solid $info-color;
+    outline-offset: 2px;
+}
+
+.author__avatar-fallback {
+    display: flex;
+    width: 100%;
+    max-width: 175px;
+    aspect-ratio: 1;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $border-color;
+    border-radius: 50%;
+    color: $info-color;
+    background: $lighter-gray;
+    font-family: $serif;
+    font-size: 2.2em;
+    font-weight: bold;
+    letter-spacing: -.06em;
+}

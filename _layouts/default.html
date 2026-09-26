@@ -3,23 +3,35 @@ layout: compress
 ---
 
 <!doctype html>
-<html lang="{{ page.lang }}">
+<html lang="{{ page.lang }}" class="no-js">
   <head>
     {% include head.html %}
+    {% include head/custom.html %}
   </head>
+
   <body>
-    <a class="skip-link" href="#main">
-      {% if page.locale == "zh" %}跳转到正文{% else %}Skip to content{% endif %}
-    </a>
-    {% include site-header.html %}
-    <main id="main" class="academic-layout">
-      <aside class="profile-column">
-        {% include site-profile.html %}
-      </aside>
-      <article class="content-column">
-        {{ content }}
+
+    <ul class="skip-link">
+      <li><a class="screen-reader-text" href="#main">{% if page.locale == 'zh' %}跳转到正文{% else %}Skip to content{% endif %}</a></li>
+    </ul>
+
+    {% include browser-upgrade.html %}
+    {% include masthead.html %}
+
+    <div id="main" role="main">
+      {% include sidebar.html %}
+
+      <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+        {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+        <div class="page__inner-wrap">
+          <section class="page__content" itemprop="text">
+            {{ content }}
+          </section>
+        </div>
       </article>
-    </main>
-    {% include site-footer.html %}
+    </div>
+
+    {% include scripts.html %}
+
   </body>
 </html>

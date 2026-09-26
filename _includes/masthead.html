@@ -1,0 +1,30 @@
+{% assign home_url = '/' %}
+{% assign home_label = '主页' %}
+{% assign language_label = 'EN' %}
+{% assign language_code = 'en' %}
+{% assign language_aria_label = 'Switch to English' %}
+{% if page.locale == 'en' %}
+  {% assign home_url = '/en/' %}
+  {% assign home_label = 'Home' %}
+  {% assign language_label = '中' %}
+  {% assign language_code = 'zh-CN' %}
+  {% assign language_aria_label = '切换到中文' %}
+{% endif %}
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav" aria-label="{% if page.locale == 'zh' %}主导航{% else %}Main navigation{% endif %}">
+        <button type="button" aria-label="{% if page.locale == 'zh' %}打开导航菜单{% else %}Open navigation menu{% endif %}"><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a href="{{ home_url | relative_url }}">{{ home_label }}</a></li>
+          {% for item in site.data.navigation[page.locale] %}
+            <li class="masthead__menu-item"><a href="#{{ item.anchor }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+    <a class="masthead__lang-switch" href="{{ page.alternate_url | relative_url }}" lang="{{ language_code }}" aria-label="{{ language_aria_label }}">{{ language_label }}</a>
+  </div>
+</div>

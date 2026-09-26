@@ -1,0 +1,8 @@
+<script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
+
+{% if site.google_analytics_id and site.google_analytics_id != "" and page.analytics != false %}
+{% include analytics.html %}
+{% endif %}
+{% if site.google_scholar_stats_enabled and site.author.googlescholar %}
+{% include fetch_google_scholar_stats.html %}
+{% endif %}
