@@ -166,6 +166,33 @@ h1:before, .anchor:before {
     letter-spacing: -.06em;
 }
 
+.author__details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .35em .8em;
+    margin-top: .8em;
+    color: $gray;
+    font-size: .9em;
+    line-height: 1.4;
+}
+
+.author__details span,
+.author__details a {
+    display: inline-flex;
+    align-items: center;
+    gap: .25em;
+}
+
+.author__details a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.author__details a:hover {
+    color: $link-color-hover;
+    text-decoration: underline;
+}
+
 .skip-link {
     z-index: 100000;
     top: .5rem;

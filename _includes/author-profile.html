@@ -1,31 +1,40 @@
 {% if page.author and site.data.authors[page.author] %}
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
+{% assign author_name = author.name[page.locale] | default: author.name %}
 {% assign author_bio = author.bio[page.locale] | default: author.bio %}
+{% assign author_location = author.location[page.locale] | default: author.location %}
 
 <div itemscope itemtype="http://schema.org/Person" class="profile_box">
 
   <div class="author__avatar">
     {% if author.avatar %}
-      <img src="{{ author.avatar | relative_url }}" class="author__avatar" alt="{{ author.name | escape }}">
+      <img src="{{ author.avatar | relative_url }}" class="author__avatar" alt="{{ author_name | escape }}">
     {% else %}
       <span class="author__avatar-fallback" aria-hidden="true">HR</span>
     {% endif %}
   </div>
 
   <div class="author__content">
-    <h3 class="author__name">{{ author.name | escape }}</h3>
+    <h3 class="author__name">{{ author_name | escape }}</h3>
     {% if page.hero_title %}<p class="author__bio author__tagline">{{ page.hero_title | escape }}</p>{% endif %}
     {% if author_bio %}<p class="author__bio">{{ author_bio | escape }}</p>{% endif %}
+    {% if author_location or author.github %}
+      <div class="author__details">
+        {% if author_location %}
+          <span><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>{{ author_location | escape }}</span>
+        {% endif %}
+        {% if author.github %}
+          <a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i>GitHub</a>
+        {% endif %}
+      </div>
+    {% endif %}
   </div>
 
-  {% if author.location or author.employer or author.uri or author.email or author.keybase or author.researchgate or author.twitter or author.facebook or author.google_plus or author.linkedin or author.dblp or author.xing or author.instagram or author.tumblr or author.bitbucket or author.github or author.stackoverflow or author.lastfm or author.dribbble or author.pinterest or author.foursquare or author.steam or author.youtube or author.soundcloud or author.weibo or author.flickr or author.codepen or author.vine or author.googlescholar or author.pubmed or author.orcid or author.impactstory or author.wikipedia %}
+  {% if author.employer or author.uri or author.email or author.keybase or author.researchgate or author.twitter or author.facebook or author.google_plus or author.linkedin or author.dblp or author.xing or author.instagram or author.tumblr or author.bitbucket or author.stackoverflow or author.lastfm or author.dribbble or author.pinterest or author.foursquare or author.steam or author.youtube or author.soundcloud or author.weibo or author.flickr or author.codepen or author.vine or author.googlescholar or author.pubmed or author.orcid or author.impactstory or author.wikipedia %}
   <div class="author__urls-wrapper">
     <!-- <button class="btn btn--inverse">More Info & Contact</button> -->
     <ul class="author__urls social-icons">
-      {% if author.location %}
-        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.location }}</li>
-      {% endif %}
       {% if author.employer %}
         <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.employer }}</li>
       {% endif %}
@@ -67,9 +76,6 @@
       {% endif %}
       {% if author.bitbucket %}
         <li><a href="https://bitbucket.org/{{ author.bitbucket }}"><i class="fab fa-fw fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
-      {% endif %}
-      {% if author.github %}
-        <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
       {% endif %}
       {% if author.stackoverflow %}
         <li><a href="https://www.stackoverflow.com/users/{{ author.stackoverflow }}"><i class="fab fa-fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow</a></li>
@@ -162,9 +168,6 @@
       {% endif %}
       {% if author.bitbucket %}
         <a href="https://bitbucket.org/{{ author.bitbucket }}"><i class="fab fa-fw fa-bitbucket" aria-hidden="true"></i></a>
-      {% endif %}
-      {% if author.github %}
-        <a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i></a>
       {% endif %}
       {% if author.stackoverflow %}
         <a href="https://www.stackoverflow.com/users/{{ author.stackoverflow }}"><i class="fab fa-fw fa-stack-overflow" aria-hidden="true"></i></a>

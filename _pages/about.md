@@ -3,8 +3,8 @@ permalink: /
 locale: zh
 lang: zh-CN
 alternate_url: /en/
-title: "Haokun Ren — 脑与视觉表征研究"
-description: "Haokun Ren 的个人主页，研究 EEG/MEG 神经信号、视觉表征对齐与脑到图像检索。"
+title: "任豪坤 — 脑与视觉表征研究"
+description: "任豪坤的个人主页，研究 EEG/MEG 神经信号、视觉表征对齐与脑到图像检索。"
 hero_title: "从神经信号，理解视觉"
 redirect_from:
   - /about/
