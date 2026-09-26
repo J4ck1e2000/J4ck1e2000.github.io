@@ -11,12 +11,14 @@ redirect_from:
   - /about.html
 ---
 
-<section id="research" class="content-section">
+<span class="anchor" id="about-me"></span>
+
+<section id="research">
   <h2>连接大脑信号与视觉表征</h2>
   <p>我的研究关注如何从非侵入式神经信号中学习视觉表征，重点包括 EEG/MEG 驱动的脑到图像检索、神经信号与视觉特征的对齐，以及跨视觉层级的表征学习。</p>
 </section>
 
-<section id="publications" class="content-section">
+<section id="publications">
   <h2>代表性论文</h2>
   {% include publication-list.html %}
 </section>
