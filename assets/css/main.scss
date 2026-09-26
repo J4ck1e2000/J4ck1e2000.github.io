@@ -156,3 +156,20 @@ h1:before, .anchor:before {
     font-weight: bold;
     letter-spacing: -.06em;
 }
+
+.skip-link {
+    z-index: 100000;
+    top: .5rem;
+    left: .5rem;
+    padding: .6em .9em;
+    transform: translateY(-160%);
+    border: 1px solid $border-color;
+    color: $text-color;
+    background: $background-color;
+    outline-offset: 3px;
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+    outline: 3px solid $info-color;
+}

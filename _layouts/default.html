@@ -11,9 +11,7 @@ layout: compress
 
   <body>
 
-    <ul class="skip-link">
-      <li><a class="screen-reader-text" href="#main">{% if page.locale == 'zh' %}跳转到正文{% else %}Skip to content{% endif %}</a></li>
-    </ul>
+    <a class="skip-link" href="#main">{% if page.locale == 'zh' %}跳转到正文{% else %}Skip to content{% endif %}</a>
 
     {% include browser-upgrade.html %}
     {% include masthead.html %}
