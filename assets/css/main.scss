@@ -168,8 +168,9 @@ h1:before, .anchor:before {
 
 .author__details {
     display: flex;
-    flex-wrap: wrap;
-    gap: .35em .8em;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .35em;
     margin-top: .8em;
     color: $gray;
     font-size: .9em;
