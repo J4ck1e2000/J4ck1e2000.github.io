@@ -18,21 +18,20 @@ There is no automated test suite or JavaScript build step. Verify changes with a
 
 ## Content and localization
 
-- `_pages/about.md` is the Chinese homepage and `_pages/en.md` is its English counterpart. Keep section IDs `research` and `publications` consistent.
-- `_data/navigation.yml` supplies localized labels for those anchors. Keep language switching as a direct link that works without JavaScript.
-- `_config.yml` stores the author's name and localized bio under `author.bio.zh` and `author.bio.en`. Do not add unverified portrait, affiliation, location, contact, social, education, award, talk, internship, or other biographical information.
-- `_data/publications.yml` is the single source for publication titles, author order, dates, bilingual summaries, and arXiv/PDF links. Preserve the arXiv author order and mark Haokun Ren with `owner: true`.
-- `_includes/publication-list.html` and `_includes/publication.html` render the shared publication list.
+- `_pages/about.md` and `_pages/en.md` contain the Chinese and English homepage content. Keep `page.lang`, locale-specific masthead labels, direct language switching, and shared `research`/`publications` anchors aligned.
+- `_config.yml` stores `author.name` and localized `author.bio.zh` / `author.bio.en`. Do not add unverified photos, affiliations, contact details, locations, awards, talks, internships, or social profiles.
+- `_data/publications.yml` is the single source for publication IDs, titles, dates, ordered authors, owner emphasis, bilingual summaries, and arXiv/PDF links.
+- `_includes/publication.html` renders each record using the framework's `.paper-box` structure. Only show a venue badge or image when supported by real publication data.
 
-## Layout, SEO, and styling
+## AcadHomepage / Minimal Mistakes framework
 
-- `_layouts/default.html` sets the page language, includes the shared navigation, profile aside, page content, and footer.
-- `_includes/site-profile.html` renders the name, localized research tagline/bio, and initials mark. Do not add a placeholder image or empty profile rows.
+- `_layouts/default.html` provides the shared theme shell, page language, masthead, sidebar, article, and scripts.
+- `_includes/masthead.html` reads `_data/navigation.yml[page.locale]`; its language switch must link directly to the alternate route.
+- `_includes/sidebar.html` and `_includes/author-profile.html` use Minimal Mistakes author/profile classes. The avatar is conditional; use the initials fallback when no verified photo exists.
 - `_includes/seo.html` emits localized metadata, canonical URLs, and `hreflang` links.
-- `assets/css/site.scss` is the active stylesheet. The desktop layout has a profile column and content column; mobile stacks them. Keep visible keyboard focus and responsive text wrapping.
-- The active layout does not use a JavaScript framework. Keep the language switch and section navigation functional without JavaScript.
-- `AGENTS.md` and `docs/` are excluded from the generated site in `_config.yml`.
+- `assets/css/main.scss` imports the upstream theme modules from `_sass/`; `assets/js/main.min.js`, the icon fonts, and the plugin assets support the upstream masthead/theme.
+- Do not restore template placeholder sections or sample content. Keep the project license and upstream attribution notices.
 
-## Legacy Google Scholar utility
+## Optional integrations
 
-`google_scholar_crawler/` is retained as a standalone utility, but the homepage has no citation-count display or configured citation-update workflow. Do not claim citations update automatically.
+Google Analytics and Scholar citation fetching are conditional and disabled without configured IDs/data. `google_scholar_crawler/` is retained separately but has no active homepage workflow. Do not claim citations update automatically.

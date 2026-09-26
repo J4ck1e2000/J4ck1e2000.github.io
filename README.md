@@ -1,6 +1,6 @@
 # Haokun Ren Academic Homepage
 
-A bilingual Jekyll academic homepage published with GitHub Pages.
+A bilingual Jekyll academic homepage built on [AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io) and its Minimal Mistakes theme foundation.
 
 | Language | Route |
 | --- | --- |
@@ -9,10 +9,14 @@ A bilingual Jekyll academic homepage published with GitHub Pages.
 
 ## Content
 
-- Edit the Chinese and English research sections in `_pages/about.md` and `_pages/en.md`.
-- Keep localized navigation labels in `_data/navigation.yml`.
-- Maintain publication titles, author order, summaries, and arXiv/PDF links in `_data/publications.yml`.
-- The profile name and localized research summary live in `_config.yml` under `author`.
+- Edit the localized research sections in `_pages/about.md` and `_pages/en.md`.
+- Keep masthead labels in `_data/navigation.yml`.
+- Maintain paper titles, author order, bilingual summaries, and arXiv/PDF links in `_data/publications.yml`.
+- The profile name and localized biography are stored under `author` in `_config.yml`.
+
+## Framework
+
+The shared layout, masthead, sidebar profile, Sass theme, and paper boxes use the AcadHomepage/Minimal Mistakes component structure. Upstream theme assets are based on AcadHomepage commit [`2cc1577`](https://github.com/RayeRen/acad-homepage.github.io/tree/2cc1577eeaf2f74dede6d016a70722dbd409ea2f). This project retains the upstream MIT license and notices for its theme dependencies.
 
 ## Local development
 
@@ -22,8 +26,8 @@ bash run_server.sh
 bundle exec jekyll build
 ```
 
-The site has no automated test suite. Verify changes by building the site and inspecting `_site/index.html` and `_site/en/index.html`.
+There is no automated test suite. Verify changes by building and inspecting `_site/index.html` and `_site/en/index.html`.
 
-## Deployment and Scholar utility
+## Optional integrations and deployment
 
-Pushing changes to `master` triggers the existing GitHub Pages deployment. The `google_scholar_crawler/` directory is a separate utility; this homepage does not load citation counts and no citation-update workflow is configured.
+Google Analytics and Scholar citation display are disabled until their IDs and data source are configured. `google_scholar_crawler/` remains a standalone utility and has no active homepage workflow. Pushing to `master` triggers GitHub Pages deployment.
