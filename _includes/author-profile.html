@@ -19,7 +19,7 @@
     <h3 class="author__name">{{ author_name | escape }}</h3>
     {% if page.hero_title %}<p class="author__bio author__tagline">{{ page.hero_title | escape }}</p>{% endif %}
     {% if author_bio %}<p class="author__bio">{{ author_bio | escape }}</p>{% endif %}
-    {% if author_location or author.github %}
+    {% if author_location or author.github or author.googlescholar %}
       <div class="author__details">
         {% if author_location %}
           <span><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>{{ author_location | escape }}</span>
@@ -27,11 +27,14 @@
         {% if author.github %}
           <a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i>GitHub</a>
         {% endif %}
+        {% if author.googlescholar %}
+          <a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i>Google Scholar</a>
+        {% endif %}
       </div>
     {% endif %}
   </div>
 
-  {% if author.employer or author.uri or author.email or author.keybase or author.researchgate or author.twitter or author.facebook or author.google_plus or author.linkedin or author.dblp or author.xing or author.instagram or author.tumblr or author.bitbucket or author.stackoverflow or author.lastfm or author.dribbble or author.pinterest or author.foursquare or author.steam or author.youtube or author.soundcloud or author.weibo or author.flickr or author.codepen or author.vine or author.googlescholar or author.pubmed or author.orcid or author.impactstory or author.wikipedia %}
+  {% if author.employer or author.uri or author.email or author.keybase or author.researchgate or author.twitter or author.facebook or author.google_plus or author.linkedin or author.dblp or author.xing or author.instagram or author.tumblr or author.bitbucket or author.stackoverflow or author.lastfm or author.dribbble or author.pinterest or author.foursquare or author.steam or author.youtube or author.soundcloud or author.weibo or author.flickr or author.codepen or author.vine or author.pubmed or author.orcid or author.impactstory or author.wikipedia %}
   <div class="author__urls-wrapper">
     <!-- <button class="btn btn--inverse">More Info & Contact</button> -->
     <ul class="author__urls social-icons">
@@ -112,9 +115,6 @@
       {% endif %}
       {% if author.vine %}
         <li><a href="https://vine.co/u/{{ author.vine }}"><i class="fab fa-fw fa-vine" aria-hidden="true"></i> Vine</a></li>
-      {% endif %}
-      {% if author.googlescholar %}
-        <li><a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
       {% endif %}
       {% if author.pubmed %}
         <li><a href="{{ author.pubmed }}"><i class="ai ai-pubmed-square ai-fw"></i> PubMed</a></li>
@@ -204,9 +204,6 @@
       {% endif %}
       {% if author.vine %}
         <a href="https://vine.co/u/{{ author.vine }}"><i class="fab fa-fw fa-vine" aria-hidden="true"></i></a>
-      {% endif %}
-      {% if author.googlescholar %}
-        <a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap"></i></a>
       {% endif %}
       {% if author.pubmed %}
         <a href="{{ author.pubmed }}"><i class="ai ai-pubmed-square ai-fw"></i></a>
