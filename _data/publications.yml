@@ -1,6 +1,7 @@
 - id: "2609.24136"
   title: "The Visual Target Matters: Learning across the Visual Hierarchy for Brain-to-Image Retrieval"
   date: "2026.09"
+  image: "images/2609.24136.png"
   authors:
     - name: "Ye Wang"
     - name: "Haokun Ren"
@@ -19,6 +20,7 @@
 - id: "2609.24109"
   title: "Adaptive Cortically Constrained EEG-Vision Alignment for Zero-Shot Brain-to-Image Retrieval"
   date: "2026.09"
+  image: "images/2609.24109.png"
   authors:
     - name: "Ye Wang"
     - name: "Haokun Ren"
