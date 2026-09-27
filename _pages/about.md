@@ -11,7 +11,10 @@ redirect_from:
   - /about.html
 ---
 
-<span class="anchor" id="about-me"></span>
+<section id="about-me">
+  <h2>关于我</h2>
+  <p>你好🙋，我叫任豪坤，是重庆邮电大学人工智能专业在读硕士研究生，导师是刘柯教授和王烨教授。我的研究方向包括脑机接口、表征学习和对比学习。你可以通过 <a href="mailto:jackiedaddy666@gmail.com">jackiedaddy666@gmail.com</a> 联系我。</p>
+</section>
 
 <section id="research">
   <h2>连接大脑信号与视觉表征</h2>
