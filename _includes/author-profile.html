@@ -19,10 +19,13 @@
     <h3 class="author__name">{{ author_name | escape }}</h3>
     {% if page.hero_title %}<p class="author__bio author__tagline">{{ page.hero_title | escape }}</p>{% endif %}
     {% if author_bio %}<p class="author__bio">{{ author_bio | escape }}</p>{% endif %}
-    {% if author_location or author.github or author.googlescholar %}
+    {% if author_location or author.email or author.github or author.googlescholar %}
       <div class="author__details">
         {% if author_location %}
           <span><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>{{ author_location | escape }}</span>
+        {% endif %}
+        {% if author.email %}
+          <a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i>Email</a>
         {% endif %}
         {% if author.github %}
           <a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i>GitHub</a>
@@ -34,7 +37,7 @@
     {% endif %}
   </div>
 
-  {% if author.employer or author.uri or author.email or author.keybase or author.researchgate or author.twitter or author.facebook or author.google_plus or author.linkedin or author.dblp or author.xing or author.instagram or author.tumblr or author.bitbucket or author.stackoverflow or author.lastfm or author.dribbble or author.pinterest or author.foursquare or author.steam or author.youtube or author.soundcloud or author.weibo or author.flickr or author.codepen or author.vine or author.pubmed or author.orcid or author.impactstory or author.wikipedia %}
+  {% if author.employer or author.uri or author.keybase or author.researchgate or author.twitter or author.facebook or author.google_plus or author.linkedin or author.dblp or author.xing or author.instagram or author.tumblr or author.bitbucket or author.stackoverflow or author.lastfm or author.dribbble or author.pinterest or author.foursquare or author.steam or author.youtube or author.soundcloud or author.weibo or author.flickr or author.codepen or author.vine or author.pubmed or author.orcid or author.impactstory or author.wikipedia %}
   <div class="author__urls-wrapper">
     <!-- <button class="btn btn--inverse">More Info & Contact</button> -->
     <ul class="author__urls social-icons">
@@ -43,9 +46,6 @@
       {% endif %}
       {% if author.uri %}
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Website</a></li>
-      {% endif %}
-      {% if author.email %}
-        <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
       {% endif %}
       {% if author.keybase %}
         <li><a href="https://keybase.io/{{ author.keybase }}"><i class="fas fa-fw fa-key" aria-hidden="true"></i> Keybase</a></li>
@@ -132,9 +132,6 @@
       <div class="author__urls_sm">
       {% if author.uri %}
         <a href="{{ author.uri }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i></a>
-      {% endif %}
-      {% if author.email %}
-        <a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i></a>
       {% endif %}
       {% if author.keybase %}
         <a href="https://keybase.io/{{ author.keybase }}"><i class="fas fa-fw fa-key" aria-hidden="true"></i></a>
