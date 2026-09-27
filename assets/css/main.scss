@@ -87,6 +87,10 @@
 
 }
 
+#publications > .publication-list > .paper-box:first-child {
+    padding-top: .5em;
+}
+
 $scroll_offset : 2em;
 h1:before, .anchor:before { 
     content: ''; 
