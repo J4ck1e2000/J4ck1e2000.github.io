@@ -4,8 +4,10 @@ A bilingual Jekyll academic homepage built on [AcadHomepage](https://github.com/
 
 | Language | Route |
 | --- | --- |
-| Chinese | `/` |
-| English | `/en/` |
+| English (default) | `/` |
+| Chinese | `/zh/` |
+
+The previous `/en/` route redirects to `/`; `/about/` and `/about.html` redirect to `/zh/`.
 
 ## Content
 
@@ -26,7 +28,7 @@ bash run_server.sh
 bundle exec jekyll build
 ```
 
-There is no automated test suite. Verify changes by building and inspecting `_site/index.html` and `_site/en/index.html`.
+There is no automated test suite. Verify changes by building and inspecting `_site/index.html` and `_site/zh/index.html`.
 
 ## Optional integrations and deployment
 

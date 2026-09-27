@@ -4,7 +4,7 @@ Repository guidance for coding agents working on this project.
 
 ## Project overview
 
-This is Haokun Ren's bilingual static academic homepage, built with Jekyll and published with GitHub Pages. The Chinese page is `/`; the English page is `/en/`. Use only user-provided or cited professional information.
+This is Haokun Ren's bilingual static academic homepage, built with Jekyll and published with GitHub Pages. The English page is `/`; the Chinese page is `/zh/`. The legacy `/en/` route redirects to `/`. Use only user-provided or cited professional information.
 
 ## Development commands
 

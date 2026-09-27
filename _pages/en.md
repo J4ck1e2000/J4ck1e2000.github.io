@@ -1,11 +1,13 @@
 ---
-permalink: /en/
+permalink: /
 locale: en
 lang: en
-alternate_url: /
+alternate_url: /zh/
 title: "Haokun Ren — Brain-to-Image Research"
 description: "Haokun Ren's research on EEG/MEG neural signals, visual representation alignment, and brain-to-image retrieval."
 hero_title: "Understanding vision through neural signals"
+redirect_from:
+  - /en/
 ---
 
 <span class="anchor" id="about-me"></span>

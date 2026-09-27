@@ -4,8 +4,10 @@
 
 | 语言 | 路径 |
 | --- | --- |
-| 中文 | `/` |
-| English | `/en/` |
+| English（默认） | `/` |
+| 中文 | `/zh/` |
+
+旧路径 `/en/` 会跳转至 `/`；`/about/` 和 `/about.html` 会跳转至 `/zh/`。
 
 ## 内容维护
 
@@ -26,7 +28,7 @@ bash run_server.sh
 bundle exec jekyll build
 ```
 
-项目没有自动化测试套件。修改后请构建站点，并检查 `_site/index.html` 和 `_site/en/index.html`。
+项目没有自动化测试套件。修改后请构建站点，并检查 `_site/index.html` 和 `_site/zh/index.html`。
 
 ## 可选集成与部署
 
