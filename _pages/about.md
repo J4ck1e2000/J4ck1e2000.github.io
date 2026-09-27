@@ -22,6 +22,6 @@ redirect_from:
 </section>
 
 <section id="publications">
-  <h2>代表性论文</h2>
+  <h2>论文</h2>
   {% include publication-list.html %}
 </section>
