@@ -25,3 +25,16 @@ redirect_from:
   <h2>📚 论文</h2>
   {% include publication-list.html %}
 </section>
+
+<section id="collaborators">
+  <h2>🤝 合作者</h2>
+  <ul>
+    <li><a href="https://dahat364.github.io/" target="_blank" rel="noopener">戴茂才</a> (Maocai Dai)</li>
+    <li><a href="https://leopoldsimmons.github.io/" target="_blank" rel="noopener">周绪洋</a> (Xuyang Zhou)</li>
+  </ul>
+</section>
+
+<section id="educations">
+  <h2>📖 教育经历</h2>
+  <p>重庆邮电大学人工智能专业硕士研究生在读。</p>
+</section>

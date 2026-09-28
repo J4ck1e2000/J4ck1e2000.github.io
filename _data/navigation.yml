@@ -3,9 +3,17 @@ zh:
     anchor: research
   - title: "论文"
     anchor: publications
+  - title: "合作者"
+    anchor: collaborators
+  - title: "教育经历"
+    anchor: educations
 
 en:
   - title: "Research"
     anchor: research
   - title: "Publications"
     anchor: publications
+  - title: "Collaborators"
+    anchor: collaborators
+  - title: "Educations"
+    anchor: educations

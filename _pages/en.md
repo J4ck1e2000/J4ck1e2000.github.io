@@ -24,3 +24,16 @@ redirect_from:
   <h2>📚 Publications</h2>
   {% include publication-list.html %}
 </section>
+
+<section id="collaborators">
+  <h2>🤝 Collaborators</h2>
+  <ul>
+    <li><a href="https://dahat364.github.io/" target="_blank" rel="noopener">Maocai Dai</a> (戴茂才)</li>
+    <li><a href="https://leopoldsimmons.github.io/" target="_blank" rel="noopener">Xuyang Zhou</a> (周绪洋)</li>
+  </ul>
+</section>
+
+<section id="educations">
+  <h2>📖 Educations</h2>
+  <p>Master's student in Artificial Intelligence at Chongqing University of Posts and Telecommunications.</p>
+</section>
