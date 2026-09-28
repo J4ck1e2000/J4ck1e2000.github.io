@@ -12,16 +12,16 @@ redirect_from:
 ---
 
 <section id="about-me">
-  <h2>关于我</h2>
+  <h2>👋 关于我</h2>
   <p>你好🙋，我叫任豪坤，是重庆邮电大学人工智能专业在读硕士研究生，导师是<a href="https://scholar.google.com/citations?user=0AWlsEMAAAAJ&amp;hl=zh-CN">刘柯教授</a>和<a href="https://scholar.google.com/citations?user=UNxKb0cAAAAJ&amp;hl=zh-CN">王烨教授</a>。我的研究方向包括脑机接口、表征学习和对比学习。你可以通过 <a href="mailto:jackiedaddy666@gmail.com">jackiedaddy666@gmail.com</a> 联系我。</p>
 </section>
 
 <section id="research">
-  <h2>连接大脑信号与视觉表征</h2>
+  <h2>🧠 连接大脑信号与视觉表征</h2>
   <p>我的研究关注如何从非侵入式神经信号中学习视觉表征，重点包括 EEG/MEG 驱动的脑到图像检索、神经信号与视觉特征的对齐，以及跨视觉层级的表征学习。</p>
 </section>
 
 <section id="publications">
-  <h2>论文</h2>
+  <h2>📚 论文</h2>
   {% include publication-list.html %}
 </section>
